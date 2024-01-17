@@ -3,10 +3,11 @@ window.onscroll = onScroll;
 function onScroll(){
     nav = document.getElementById("navigation-bar");
     if (document.body.scrollTop >= 15){
-        document.getElementById("navigation-bar").style.backgroundColor = "rgba(0, 0, 0, 1)";
-        bgFadeIn(document.getElementById("navigation-bar"));
+        //document.getElementById("navigation-bar").style.backgroundColor = "rgba(0, 0, 0, 1)";
+        //bgFadeIn(document.getElementById("navigation-bar"));
     } else {
-        document.getElementById("navigation-bar").style.backgroundColor = "transparent";
+        //bgFadeOut(document.getElementById("navigation-bar"));
+        //document.getElementById("navigation-bar").style.backgroundColor = "transparent";
     }
     
 }
@@ -17,10 +18,7 @@ function bgFadeIn(element) {
         if (op >= 1){
             clearInterval(timer);
         }
-
-        //Fix here
-        element.style.opacity = op;
-        element.style.filter = "alpha(opacity=" + op * 100 + ")";
+        element.style.backgroundColor = "rgba(0, 0, 0, " + op + ")";
         op += op * 0.1;
     }, 10);
 }
@@ -31,8 +29,7 @@ function bgFadeOut(element) {
         if (op <= 0.0){
             clearInterval(timer);
         }
-        element.style.opacity = op;
-        element.style.filter = "alpha(opacity=" + op * 100 + ")";
+        element.style.backgroundColor = "rgba(0, 0, 0, " + op + ")";
         op -= op * 0.1;
     }, 10);
 }
