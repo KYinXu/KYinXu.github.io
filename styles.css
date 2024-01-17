@@ -1,18 +1,12 @@
 body {
-background-color: #FAE79A;
+background-color: #FFFFFF;
 }
 /* background-color: #FAE79A*/
-.banner {
-    color: black;
-    text-align: center;
-    font-family: "Lucida Console";
-    padding-bottom: 5px;
-    margin-bottom: 0;
-    background-color: #FFFFFF;
-    
-}
 #navigation-bar {
-    background-color: #FFFFFF;
+    font-family: "Lucida Console";
+    color: #FFFFFF;
+    font-weight: 500;
+    width: 100%;
     /*
     border-bottom-style: solid;
     border-color: black;
