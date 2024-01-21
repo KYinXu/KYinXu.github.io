@@ -21,7 +21,6 @@ function onScroll(){
 
 //Fix fading condition checks. Make sure setting op doesn't disrupt
 function bgFadeIn(element) {
-    console.log(element.style.backgroundColor);
     var bgc = element.style.backgroundColor;
     if (bgc == ""){
         var op = 0.1;
@@ -37,12 +36,10 @@ function bgFadeIn(element) {
         }
         element.style.backgroundColor = "rgba(0, 0, 0, " + op + ")";
         op += op * 0.1;
-        console.log("increasing: " + op);
     }, 1);
 }
 
 function bgFadeOut (element) {
-    console.log("fade out");
     var bgc = element.style.backgroundColor;
     if (bgc == ""){
         var op = 0.7;
@@ -57,6 +54,5 @@ function bgFadeOut (element) {
         }
         element.style.backgroundColor = "rgba(0, 0, 0, " + op + ")";
         op -= op * 0.1;
-        console.log("decreasing: " + op);
     }, 1);
 }
