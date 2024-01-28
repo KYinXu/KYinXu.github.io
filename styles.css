@@ -1,5 +1,5 @@
 body {
-background-color: #333333;
+background-color: #000000;
 color: #FFFFFF;
 }
 /* background-color: #FAE79A*/
@@ -12,6 +12,7 @@ color: #FFFFFF;
     height: 10%;
     z-index: 1000;
     background-color: rgba(0, 0, 0, 0);
+    transition: 0.3s;
     /*
     border-bottom-style: solid;
     border-color: black;
