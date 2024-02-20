@@ -2,6 +2,12 @@ body {
 background-color: #000000;
 color: #FFFFFF;
 }
+.wrapper img {
+    object-fit: cover;
+}
+#coverimg {
+    object-fit: cover;
+}
 /* background-color: #FAE79A*/
 #navigation-bar {
     font-family: "Lucida Console";
@@ -17,6 +23,9 @@ color: #FFFFFF;
     border-bottom-style: solid;
     border-color: black;
     */
+}
+#section-2 {
+    height: 500px;
 }
 .nav-link {
     color: #BBBBBB;
