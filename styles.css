@@ -32,6 +32,27 @@ color: #FFFFFF;
     
 }
 .nav-link:hover {
-    color: #FFFFFF;
+    color: #FFFFFF !important;
     
+}
+
+.nav-link:visited {
+    color: #BBBBBB;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 5px;
+    background: #111111;
+}
+::-webkit-scrollbar-thumb{
+    background: #BBBBBB;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #eeeeee;
 }
